@@ -7,8 +7,10 @@ The tool is uses the language model developed by Facebook Research (TransCoder),
 
 ## Contents of the repository
 The repository contains two parts:
-1) The TransDPR tool for use on your own programs, or to replicate the study in the paper. 
+1) The TransDPR tool for use on your own programs, or to replicate the study in the paper. The tool is the python files in the repository (see the instructions below).
 2) Data from the paper, in the folder data. It can be used to replicate the study presented in the paper. The data is already annotated. 
+* Program: folder contains the open source programs which we used in the study. 
+* data (csv): folder contains the .csv files with the data, which is the result of extracting embeddings. 
 
 ## Dependencies and requirements
 Following are the dependencies of the TransCoder:
