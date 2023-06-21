@@ -1,23 +1,20 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# TransDPR tool: Design Pattern Recognition using Programming Language models
+#
+# License: MIT
+#
+# This file contains is the pipeline to extract embeddings and use them to calculate
+# distances to Singleton and Prototype patterns
 
-
+# imports
 import site
 site.getsitepackages()
-
-
-# In[2]:
-
 
 import tensorflow as tf
 import tensorflow_hub as hub
 import tensorflow_text as text
-
-
-# In[3]:
-
 
 import pandas as pd
 

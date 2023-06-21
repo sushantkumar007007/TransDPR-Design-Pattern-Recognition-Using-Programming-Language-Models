@@ -14,6 +14,12 @@
 #     --model_path trained_model.pth < input_code.cpp
 #
 
+# TransDPR modification:
+#
+# Added the loop for extracting embeddings from larger files
+# and using the average embeddings to make the final embeddings vector
+# for all lines in one file
+
 import argparse
 import os
 import sys
