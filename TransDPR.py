@@ -76,7 +76,7 @@ print(acc_rf )
 # In[27]:
 # analyze the data from the industrial partner
 import pandas as pd
-df2 = pd.read_csv("vc_test3.csv")
+df2 = pd.read_csv("data/vc_test3.csv")
 df2.head(5)
 
 
@@ -108,7 +108,10 @@ print(y2lg)
 # In[44]:
 # analyze the data from the industrial partner with the
 # superficially created non-singleton programs
-df3 = pd.read_csv("final_minus_example.csv")
+
+# the code below is the same as in the previous examples,
+# hence scarce comments
+df3 = pd.read_csv("data/final_minus_example.csv")
 
 df3.head(5)
 print(df3['class1'].value_counts())
