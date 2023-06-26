@@ -8,30 +8,28 @@
 # This file contains is the pipeline to extract embeddings and use them to calculate
 # distances to Singleton and Prototype patterns
 
+# In[1]:
+
 # imports
 import site
 site.getsitepackages()
 
 import tensorflow as tf
 import tensorflow_hub as hub
-import tensorflow_text as text
+#import tensorflow_text as text
 
 import pandas as pd
 
-df1 = pd.read_csv("final.csv")
+df1 = pd.read_csv("data/final.csv")
 #df["class"] = pd.get_dummies(df["class"])
 df1.head(5)
 
 
 # In[4]:
-
-
 df1['class'].value_counts()
 
 
 # In[19]:
-
-
 print(df1.shape)
 
 
@@ -56,6 +54,9 @@ from sklearn.metrics import accuracy_score
 X1_train, X1_test, y1_train, y1_test = train_test_split(X1, y1, test_size=0.2, random_state=1)
 print(X1_train.shape, X1_test.shape, y1_train.shape, y1_test.shape)
 
+# In[23]:
+import numpy as np
+np.__version__
 
 # In[23]:
 
