@@ -8,4 +8,4 @@ seaborn==0.12.2
 tensorflow==2.12.0
 tensorflow_hub==0.13.0
 tensorflow_text==2.12.1
-torch==2.0.1+cu118
+torch==2.0.1
